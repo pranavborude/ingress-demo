@@ -15,7 +15,7 @@ spec:
   #       number: 8080
   ingressClassName: nginx
   rules:
-    http:
+  - http:
       paths:
       - path: /one
         pathType: Prefix
