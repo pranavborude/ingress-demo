@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-second
+  namespace: dev
+  labels:
+    app: test-second
+spec:
+  selector:
+    matchLabels:
+      app: test-second
+  template:
+    metadata:
+      labels:
+        app: test-second
+    spec:
+      containers:
+      - name: sample-second
+        image: docker.io/pranav1562/app-two:latest 
+---
