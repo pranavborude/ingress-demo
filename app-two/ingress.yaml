@@ -14,7 +14,7 @@ spec:
   #     port:
   #       number: 8080
   rules:
-  # - host: kubernetes.docker.internal
+  - host: kubernetes.docker.internal
     http:
       paths:
       # - path: /one/?(.*)
