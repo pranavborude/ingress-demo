@@ -17,4 +17,6 @@ spec:
       containers:
       - name: sample-first
         image: docker.io/pranav1562/app-one:latest  ##You can use any docker repository to pull your image.
----
+        ports:
+          - containerPort: 80
+

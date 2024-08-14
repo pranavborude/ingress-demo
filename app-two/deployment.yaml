@@ -16,5 +16,7 @@ spec:
     spec:
       containers:
       - name: sample-second
-        image: docker.io/pranav1562/app-two:latest 
+        image: docker.io/pranav1562/app-two:latest
+        ports:
+          - containerPort: 3000
 ---
