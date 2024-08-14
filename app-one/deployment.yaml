@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-first
+  namespace: dev
+  labels:
+    app: test-first
+spec:
+  selector:
+    matchLabels:
+      app: test-first
+  template:
+    metadata:
+      labels:
+        app: test-first
+    spec:
+      containers:
+      - name: sample-first
+        image: docker.io/pranav1562/app-one:latest  ##You can use any docker repository to pull your image.
+---
