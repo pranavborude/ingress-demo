@@ -4,7 +4,6 @@ metadata:
   name: test-second
   namespace: dev
 spec:
-  type: ClusterIP
   selector:
     app: test-second
   ports:
